@@ -3,6 +3,8 @@ import 'package:todo_app/core/utils/colors_manager.dart';
 import 'package:todo_app/presentation/screens/tabs/settings_tab/settings_tab.dart';
 import 'package:todo_app/presentation/screens/tabs/tasks_tab/tasks_tab.dart';
 
+import 'add_task_bottom_sheet/add_task_bottom_sheet.dart';
+
 class HomeScreen extends StatefulWidget {
   HomeScreen({super.key});
 
@@ -21,7 +23,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: FloatingActionButton(
-        onPressed: () {}, child: const Icon(Icons.add),
+        onPressed: () {
+          AddTaskBottomSheet.show(context);
+        }, child: const Icon(Icons.add),
       ),
       bottomNavigationBar: BottomAppBar(
         notchMargin: 8,

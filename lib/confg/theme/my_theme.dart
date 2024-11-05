@@ -22,7 +22,7 @@ class MyTheme {
         size: 32
       )
     ),
-    bottomAppBarTheme: BottomAppBarTheme(
+    bottomAppBarTheme:const BottomAppBarTheme(
       color: ColorsManager.white,
       shape: CircularNotchedRectangle(),
       elevation: 14
@@ -35,7 +35,15 @@ class MyTheme {
       iconSize: 26,
 
     ),
-    cardTheme: CardTheme(
+    bottomSheetTheme: const BottomSheetThemeData(
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topRight: Radius.circular(12),
+          topLeft: Radius.circular(12)
+        )
+      )
+    ),
+    cardTheme:  CardTheme(
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15)
       ),
@@ -44,7 +52,8 @@ class MyTheme {
     ),
     dividerColor: ColorsManager.blue,
     textTheme: TextTheme(
-        titleMedium: MyTextStyles.cardTittleTextStyle
-    )
+        titleMedium: MyTextStyles.cardTittleTextStyle,
+    ),
+
   );
 }

@@ -46,6 +46,11 @@ class _SettingsTabState extends State<SettingsTab> {
 
                 ),
                 DropdownButton<String>(
+                  underline: SizedBox(
+                    child: Card(
+                      color: Colors.white,
+                    ),
+                  ),
 
                   style: GoogleFonts.poppins(
                       color: Colors.black,
@@ -99,6 +104,11 @@ class _SettingsTabState extends State<SettingsTab> {
                 ),
                 ),
                 DropdownButton<String>(
+                  underline: SizedBox(
+                    child: Card(
+                      color: Colors.white,
+                    ),  
+                  ),
                   style: GoogleFonts.poppins(
                       color: Colors.black,
                       fontSize: 14,
